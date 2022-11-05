@@ -1,0 +1,177 @@
+header {
+    width: 100%;
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-clr);
+    padding: 8px 20px;
+    z-index: 777;
+}
+
+.section1,
+.section2,
+.section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* start section 01 */
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.menu-toggle {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.menu-toggle:hover {
+    background-color: var(--header-button-bg-hover);
+    border-radius: 50%;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+    position: relative;
+}
+
+.logo::after {
+    content: "DZ";
+    position: absolute;
+    top: -8px;
+    right: -14px;
+    font-size: 10px;
+    font-weight: 600;
+    color: hsl(0, 0%, 50%)
+}
+
+
+/* end section 01 */
+
+
+/* start section 02 */
+
+.section2 {}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* search bar */
+
+form div:first-child {
+    height: 40px;
+    border: 1px solid var(--header-border-clr);
+    border-radius: 48px 0 0 48px;
+}
+
+#searchBar {
+    width: 500px;
+    height: 100%;
+    color: var(--text-clr);
+    background-color: #111111;
+    border: 48px;
+    border-radius: 48px 0 0 48px;
+    padding-left: 20px;
+}
+
+#searchBar:focus {
+    border: 1px solid rgb(14, 95, 224);
+    outline: none;
+}
+
+form div button {
+    height: 40px;
+    border: 1px solid var(--border-clr);
+    cursor: pointer;
+}
+
+form div:nth-child(2) button {
+    border-radius: 0 48px 48px 0;
+    width: 60px;
+    color: var(--text-clr);
+    background-color: var(--header-searchButton-bg);
+}
+
+form div:last-child button {
+    width: 40px;
+    color: var(--text-clr);
+    background-color: var(--header-micButton-bg);
+    border: none;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+form div:last-child button:hover {
+    background-color: var(--header-button-bg-hover)
+}
+
+
+/* end section 02 */
+
+
+/* start section 03 */
+
+.section3 {
+    column-gap: 30px
+}
+
+.section3 span {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.notif {
+    position: relative;
+}
+
+.cnv:hover,
+.notif:hover {
+    background-color: var(--header-button-bg-hover);
+    border-radius: 50%;
+}
+
+.notif::after {
+    content: "9+";
+    position: absolute;
+    top: 5px;
+    left: 22px;
+    width: auto;
+    height: auto;
+    padding: 0px 4px;
+    background-color: var(--primary-clr);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1rem;
+    text-align: center;
+    border: 2px solid var(--bg-clr);
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+/* end section 03 */

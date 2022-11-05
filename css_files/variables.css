@@ -1,0 +1,44 @@
+:root {
+    --primary-clr: #cc0000;
+    --secondary-clr: #3ea6ff;
+    --bg-clr: #0f0f0f;
+    --text-clr: #f1f1f1;
+    --text-desk-clr: #dcdcdc;
+    --border-clr: hsl(0, 0%, 19%);
+    --scrollbar-track-clr: var;
+    --scrollbar-thumb-clr: #ababab;
+    --scroller-radius: 18px;
+}
+
+
+/* header variables */
+
+:root {
+    --header-border-clr: var(--border-clr);
+    --header-searchButton-bg: #222222;
+    --header-micButton-bg: #181818;
+    --header-button-bg-hover: #303030;
+    --header-homeButton-bg: var(--header-button-bg-hover);
+    --padding-header: 1rem;
+}
+
+
+/* aside variables */
+
+:root {
+    --aside-button-bg-hover: #272727;
+    --aside-button-border-clr: var(--border-clr);
+}
+
+
+/* main variables */
+
+:root {
+    --main-button-bg: #272727;
+    --main-button-bg-hover: #3f3f3f;
+    --main-button-bg-active: var(--text-clr);
+    --main-button-bg-active-hover: #fff;
+    --main-button-clr: var(--bg-clr);
+}
+
+:root {}
